@@ -6,7 +6,7 @@
 
 
 # 📊 GitHub Stats:
-[![Dipa's GitHub stats](https://github-readme-stats.vercel.app/api?username=PradipaJavierFatah&show_icons=true&theme=gruvbox)](https://github.com/PradipaJavierFatah)
+[![Dipa's GitHub stats](https://github-readme-stats-one-eight.vercel.app/api?username=PradipaJavierFatah&show_icons=true&theme=gruvbox&hide_border=false)](https://github.com/PradipaJavierFatah)
 ![](https://github-readme-streak-stats.herokuapp.com/?user=PradipaJavierFatah&theme=gruvbox&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=PradipaJavierFatah&theme=gruvbox&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
