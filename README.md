@@ -7,7 +7,7 @@
 
 # 📊 GitHub Stats:
 ![](https://github-readme-streak-stats.herokuapp.com/?user=PradipaJavierFatah&theme=gruvbox&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=PradipaJavierFatah&theme=gruvbox&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+![Most Used Languages](./profile/most-used-languages.svg)
 
 
 ## 🌐 Socials:
