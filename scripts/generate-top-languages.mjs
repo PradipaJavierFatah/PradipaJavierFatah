@@ -25,6 +25,9 @@ for (let page = 1; ; page += 1) {
   repositories.push(...results.filter((repo) => !repo.fork && repo.owner?.login?.toLowerCase() === username.toLowerCase()));
   if (results.length < 100) break;
 }
+if (!repositories.some((repo) => repo.private)) {
+  throw new Error("The token cannot access a private repository; check its repository access settings.");
+}
 
 const languageBytes = new Map();
 for (const repo of repositories) {
