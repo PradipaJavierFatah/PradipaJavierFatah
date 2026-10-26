@@ -1,1 +1,130 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="184" viewBox="0 0 480 184" role="img" aria-labelledby="title desc"><title id="title">Most Used Languages</title><desc id="desc">Top programming languages by code size.</desc><rect width="480" height="184" rx="8" fill="#282828" stroke="#504945"/><text x="24" y="32" fill="#ebdbb2" font-size="16" font-weight="600">Most Used Languages</text><text x="24" y="58" fill="#ebdbb2" font-size="12">Jupyter Notebook</text><text x="456" y="58" fill="#bdae93" font-size="12" text-anchor="end">34.0%</text><rect x="24" y="64" width="432" height="6" rx="3" fill="#3c3836"/><rect x="24" y="64" width="146.68" height="6" rx="3" fill="#fabd2f"/><text x="24" y="82" fill="#ebdbb2" font-size="12">Python</text><text x="456" y="82" fill="#bdae93" font-size="12" text-anchor="end">25.0%</text><rect x="24" y="88" width="432" height="6" rx="3" fill="#3c3836"/><rect x="24" y="88" width="108.06" height="6" rx="3" fill="#83a598"/><text x="24" y="106" fill="#ebdbb2" font-size="12">TypeScript</text><text x="456" y="106" fill="#bdae93" font-size="12" text-anchor="end">21.7%</text><rect x="24" y="112" width="432" height="6" rx="3" fill="#3c3836"/><rect x="24" y="112" width="93.70" height="6" rx="3" fill="#d3869b"/><text x="24" y="130" fill="#ebdbb2" font-size="12">Blade</text><text x="456" y="130" fill="#bdae93" font-size="12" text-anchor="end">4.8%</text><rect x="24" y="136" width="432" height="6" rx="3" fill="#3c3836"/><rect x="24" y="136" width="20.93" height="6" rx="3" fill="#8ec07c"/><text x="24" y="154" fill="#ebdbb2" font-size="12">JavaScript</text><text x="456" y="154" fill="#bdae93" font-size="12" text-anchor="end">3.7%</text><rect x="24" y="160" width="432" height="6" rx="3" fill="#3c3836"/><rect x="24" y="160" width="16.06" height="6" rx="3" fill="#fe8019"/></svg>
+<!-- Compact Gruvbox template from anuraghazra/github-readme-stats (MIT); see LICENSE.github-readme-stats. -->
+<svg
+        width="300"
+        height="165"
+        viewBox="0 0 300 165"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-labelledby="descId"
+      >
+        <title id="titleId">Most Used Languages</title>
+        <desc id="descId">Top programming languages by code size.</desc>
+        <style>
+          .header {
+            font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
+            fill: #fabd2f;
+            animation: fadeInAnimation 0.8s ease-in-out forwards;
+          }
+          @supports(-moz-appearance: auto) {
+            /* Selector detects Firefox */
+            .header { font-size: 15.5px; }
+          }
+
+    @keyframes slideInAnimation {
+      from {
+        width: 0;
+      }
+      to {
+        width: calc(100%-100px);
+      }
+    }
+    @keyframes growWidthAnimation {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    .stat {
+      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #8ec07c;
+    }
+    @supports(-moz-appearance: auto) {
+      /* Selector detects Firefox */
+      .stat { font-size:12px; }
+    }
+    .bold { font-weight: 700 }
+    .lang-name {
+      font: 400 11px "Segoe UI", Ubuntu, Sans-Serif;
+      fill: #8ec07c;
+    }
+    .stagger {
+      opacity: 0;
+      animation: fadeInAnimation 0.3s ease-in-out forwards;
+    }
+    #rect-mask rect{
+      animation: slideInAnimation 1s ease-in-out forwards;
+    }
+    .lang-progress{
+      animation: growWidthAnimation 0.6s ease-in-out forwards;
+    }
+
+
+
+      /* Animations */
+      @keyframes scaleInAnimation {
+        from {
+          transform: translate(-5px, 5px) scale(0);
+        }
+        to {
+          transform: translate(-5px, 5px) scale(1);
+        }
+      }
+      @keyframes fadeInAnimation {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+
+        </style>
+
+
+
+        <rect
+          data-testid="card-bg"
+          x="0.5"
+          y="0.5"
+          rx="4.5"
+          height="99%"
+          stroke="#e4e2e2"
+          width="299"
+          fill="#282828"
+          stroke-opacity="1"
+        />
+
+
+      <g
+        data-testid="card-title"
+        transform="translate(25, 35)"
+      >
+        <g transform="translate(0, 0)">
+      <text
+        x="0"
+        y="0"
+        class="header"
+        data-testid="header"
+      >Most Used Languages</text>
+    </g>
+      </g>
+
+
+        <g
+          data-testid="main-card-body"
+          transform="translate(0, 55)"
+        >
+
+    <svg data-testid="lang-items" x="25">
+      <mask id="rect-mask">
+        <rect x="0" y="0" width="250" height="8" fill="white" rx="5"/>
+      </mask>
+      <rect mask="url(#rect-mask)" data-testid="lang-progress" x="0" y="0" width="91.46" height="8" fill="#DA5B0B"/><rect mask="url(#rect-mask)" data-testid="lang-progress" x="91.46" y="0" width="67.38" height="8" fill="#3572A5"/><rect mask="url(#rect-mask)" data-testid="lang-progress" x="158.83999999999997" y="0" width="58.42" height="8" fill="#3178c6"/><rect mask="url(#rect-mask)" data-testid="lang-progress" x="217.26" y="0" width="13.05" height="8" fill="#f7523f"/><rect mask="url(#rect-mask)" data-testid="lang-progress" x="230.31" y="0" width="10.06" height="8" fill="#f1e05a"/><rect mask="url(#rect-mask)" data-testid="lang-progress" x="240.37" y="0" width="19.630000000000003" height="8" fill="#663399"/>
+      <g transform="translate(0, 25)"><g transform="translate(0, 0)"><g transform="translate(0, 0)"><g class="stagger" style="animation-delay: 450ms"><circle cx="5" cy="6" r="5" fill="#DA5B0B"/><text data-testid="lang-name" x="15" y="10" class="lang-name">Jupyter Notebook 36.58%</text></g></g><g transform="translate(0, 25)"><g class="stagger" style="animation-delay: 600ms"><circle cx="5" cy="6" r="5" fill="#3572A5"/><text data-testid="lang-name" x="15" y="10" class="lang-name">Python 26.95%</text></g></g><g transform="translate(0, 50)"><g class="stagger" style="animation-delay: 750ms"><circle cx="5" cy="6" r="5" fill="#3178c6"/><text data-testid="lang-name" x="15" y="10" class="lang-name">TypeScript 23.37%</text></g></g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)"><g class="stagger" style="animation-delay: 450ms"><circle cx="5" cy="6" r="5" fill="#f7523f"/><text data-testid="lang-name" x="15" y="10" class="lang-name">Blade 5.22%</text></g></g><g transform="translate(0, 25)"><g class="stagger" style="animation-delay: 600ms"><circle cx="5" cy="6" r="5" fill="#f1e05a"/><text data-testid="lang-name" x="15" y="10" class="lang-name">JavaScript 4.02%</text></g></g><g transform="translate(0, 50)"><g class="stagger" style="animation-delay: 750ms"><circle cx="5" cy="6" r="5" fill="#663399"/><text data-testid="lang-name" x="15" y="10" class="lang-name">CSS 3.85%</text></g></g></g></g>
+    </svg>
+
+        </g>
+      </svg>
