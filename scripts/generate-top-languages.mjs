@@ -17,6 +17,11 @@ async function getJSON(path) {
   return response.json();
 }
 
+const authenticatedUser = await getJSON("/user");
+if (authenticatedUser.login?.toLowerCase() !== username.toLowerCase()) {
+  throw new Error("The token belongs to a different GitHub account.");
+}
+
 const repositories = [];
 for (let page = 1; ; page += 1) {
   const query = new URLSearchParams({ visibility: "all", affiliation: "owner", per_page: "100", page: String(page) });
