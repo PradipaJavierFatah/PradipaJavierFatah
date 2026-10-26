@@ -1,4 +1,5 @@
 import { mkdir, writeFile } from "node:fs/promises";
+import { renderTopLanguages } from "./render-top-languages.mjs";
 
 const token = process.env.LANGUAGE_STATS_TOKEN;
 const username = process.env.GITHUB_USERNAME;
@@ -42,22 +43,7 @@ for (const repo of repositories) {
   }
 }
 
-const ranked = [...languageBytes].sort((a, b) => b[1] - a[1]);
-const totalBytes = ranked.reduce((total, [, bytes]) => total + bytes, 0);
-if (!ranked.length || !Number.isSafeInteger(totalBytes) || totalBytes <= 0) {
-  throw new Error("No repository language data was returned; the existing card was left untouched.");
-}
-
-const colors = ["#fabd2f", "#83a598", "#d3869b", "#8ec07c", "#fe8019"];
-const escapeXML = (text) => text.replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;" })[char]);
-const rows = ranked.slice(0, 5).map(([language, bytes], index) => {
-  const percent = (bytes / totalBytes) * 100;
-  const y = 58 + index * 24;
-  const barWidth = Math.max(2, (432 * percent) / 100);
-  return `<text x="24" y="${y}" fill="#ebdbb2" font-size="12">${escapeXML(language)}</text><text x="456" y="${y}" fill="#bdae93" font-size="12" text-anchor="end">${percent.toFixed(1)}%</text><rect x="24" y="${y + 6}" width="432" height="6" rx="3" fill="#3c3836"/><rect x="24" y="${y + 6}" width="${barWidth.toFixed(2)}" height="6" rx="3" fill="${colors[index]}"/>`;
-}).join("");
-
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="480" height="184" viewBox="0 0 480 184" role="img" aria-labelledby="title desc"><title id="title">Most Used Languages</title><desc id="desc">Top programming languages by code size.</desc><rect width="480" height="184" rx="8" fill="#282828" stroke="#504945"/><text x="24" y="32" fill="#ebdbb2" font-size="16" font-weight="600">Most Used Languages</text>${rows}</svg>`;
+const svg = renderTopLanguages(languageBytes);
 
 await mkdir("profile", { recursive: true });
 await writeFile("profile/most-used-languages.svg", svg);
