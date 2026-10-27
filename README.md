@@ -2,6 +2,7 @@
 
 🧑🏻‍💻 **Software Engineer** sharing my journey and learnings in tech.  
 🧑🏻‍🎓 Studied **[Computer Science](https://binus.ac.id/)** at [Binus University](https://binus.ac.id/).
+
 💭 Currently learning about **AI Engineer**!  
 
 
