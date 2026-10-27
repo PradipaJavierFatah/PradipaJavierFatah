@@ -2,7 +2,7 @@
 
 🧑🏻‍💻 **Software Engineer** sharing my journey and learnings in tech.  
 🧑🏻‍🎓 Studied **[Computer Science](https://binus.ac.id/)** at [Binus University](https://binus.ac.id/) in Indonesia.  
-💭 Currently learning about **data analytics** and **data visualization**!  
+💭 Currently learning about **AI Engineer**!  
 
 
 # 📊 GitHub Stats:
